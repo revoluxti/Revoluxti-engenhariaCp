@@ -1,0 +1,234 @@
+/*ESTILOS GERAIS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇÁRIO */
+
+header {
+    padding: 20px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #ce16168e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #eb6f6f;
+    transform: scale(1.2);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+header .btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #d13434a8;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contact button:hover {
+    box-shadow: 0px 0px 8px #eb6f6ff6;
+    transform: .2s;
+}
+
+.logo img {
+    max-width: 150px;
+    border-radius: 100px;
+    padding: auto;
+    margin-bottom: 10px;
+    margin-left: 40px;
+
+}
+
+
+/* Topo do site */
+section.topo-do-site {
+    padding: 20px 4%;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Ocupa a altura total da tela */
+}
+
+section.topo-do-site .interface {
+    display: flex;
+    justify-content: flex-start;  /* Centraliza horizontalmente */
+    align-items: flex-start;      /* Centraliza verticalmente */
+}
+
+.imagem-central img {
+    max-width: 100%;   /* Limita o tamanho máximo da imagem */
+    height: auto;      /* Ajusta a altura automaticamente */
+}
+
+footer {
+    background-color: #a3212170;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Estilo pagina inicio*/
+/* Topo do inicio */
+section.topo-do-inicio {
+    padding: 10px 4%;
+
+}
+
+section.topo-do-inicio .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-topo-inicio h1 {
+    color: rgba(220, 20, 60, 0.671);
+    font-size: 2.5rem;
+    padding: 5px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+.txt-topo-inicio h1 span {
+    color: #ec1414cc;
+}
+
+.txt-topo-inicio p {
+    justify-content: space-between;
+    background-color: #d82e2e83;
+    text-align: justify;
+    padding: 25px;
+    margin-left: 50px;
+    border-radius: 5px;
+    color: black;
+    height: 550px;
+    width: 1050px;
+    font-size: 18px;
+}
+
+.img-topo-inicio img {
+    border: 1px solid #d13434a8;
+    margin: 50px;
+    border-radius: 2px;
+    margin-right: 50px;
+    animation: flutuar 5s ease-in-out infinite alternate;
+    max-width: 250px;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(-90px);
+        /* Começa na posição original */
+    }
+
+    100% {
+        transform: translateY(120px);
+        /* Move para cima */
+    }
+}
+
+section.blog {
+    padding: 50px 4%;
+    
+    /*efeito linha sombreada*/
+}
+
+section.blog .flex {
+    display: block; /* Garante que os elementos fiquem empilhados verticalmente */
+    gap: 20px; /* Espaçamento entre os elementos */
+   
+    
+}
+
+section.blog .reportagem {
+    padding: 20px 4%;
+    width: 100%;
+}
+
+.reportagem h2 {
+    color: crimson;
+    font-size: 2.5rem;
+    padding: 5px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.lateral {
+    display: flex; /* Alinha a imagem e o texto horizontalmente */
+    flex-direction: row; /* Coloca a imagem e o texto na mesma linha */
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    align-items: center; /* Alinha os itens ao topo */
+    justify-content: center; /* Alinha à esquerda */
+    margin-left: 50px;
+}
+
+.lateral img {
+    border: none;
+    border-radius: 2px;
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto; /* Ajuste automático da altura */
+    margin-right: 50px;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.lateral p {
+    background-color: #d82e2e83;
+    text-align: justify;
+    padding: 20px;
+    margin-right: 18px;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    width: 500px; /* Ajusta o parágrafo para ocupar o restante do espaço */
+    height: 495px; /* Ajusta a altura automaticamente */
+}
+
+img.the_revotester{
+    height: 340px;
+}
+/* Estilo projetos e ferramentas */
+section.ferramentas {
+  
+}
